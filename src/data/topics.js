@@ -1,0 +1,200 @@
+export const topics = [
+  {
+    id: 'sql-basics',
+    title: 'SQL Basics',
+    explanation: 'SQL (Structured Query Language) is the standard language for dealing with Relational Databases. It allows you to create, read, update, and delete data.',
+    keyPoints: [
+      { title: 'SELECT', description: 'Used to retrieve data from a database. Usually followed by columns to select or * for all.' },
+      { title: 'WHERE', description: 'Used to filter records based on specific conditions.' },
+      { title: 'ORDER BY', description: 'Used to sort the result-set in ascending or descending order.' },
+      { title: 'GROUP BY', description: 'Groups rows that have the same values into summary rows, often with aggregate functions like COUNT().' }
+    ],
+    questions: [
+      { id: 'q1', text: 'Which SQL statement is used to extract data from a database?', options: ['SELECT', 'GET', 'EXTRACT', 'OPEN'], correctAnswerText: 'SELECT' },
+      { id: 'q2', text: 'Which SQL keyword is used to sort the result-set?', options: ['ORDER BY', 'SORT BY', 'ORDER', 'SORT'], correctAnswerText: 'ORDER BY' },
+      { id: 'q3', text: 'How do you select all columns from a table named "Persons"?', options: ['SELECT * FROM Persons', 'SELECT Persons', 'SELECT *.Persons', 'SELECT ALL FROM Persons'], correctAnswerText: 'SELECT * FROM Persons' },
+      { id: 'q4', text: 'Which keyword adds a condition to a SQL query?', options: ['WHERE', 'IF', 'CONDITION', 'WHEN'], correctAnswerText: 'WHERE' },
+      { id: 'q5', text: 'Which SQL function returns the number of rows in a table?', options: ['COUNT()', 'NUMBER()', 'SUM()', 'TOTAL()'], correctAnswerText: 'COUNT()' },
+      { id: 'q6', text: 'What is the default sort order of ORDER BY?', options: ['Ascending', 'Descending', 'Random', 'None'], correctAnswerText: 'Ascending' },
+      { id: 'q7', text: 'Which statement is used to update data in a database?', options: ['UPDATE', 'MODIFY', 'SAVE', 'SET'], correctAnswerText: 'UPDATE' },
+      { id: 'q8', text: 'Which statement is used to delete data from a database?', options: ['DELETE', 'REMOVE', 'DROP', 'TRUNCATE'], correctAnswerText: 'DELETE' },
+      { id: 'q9', text: 'How do you add a new row to a table?', options: ['INSERT INTO', 'ADD ROW', 'APPEND', 'NEW ROW'], correctAnswerText: 'INSERT INTO' },
+      { id: 'q10', text: 'Which operator is used to search for a specified pattern in a column?', options: ['LIKE', 'MATCH', 'PATTERN', '='], correctAnswerText: 'LIKE' },
+      { id: 'q11', text: 'Which constraint ensures that all values in a column are different?', options: ['UNIQUE', 'DISTINCT', 'DIFFERENT', 'FOREIGN'], correctAnswerText: 'UNIQUE' },
+      { id: 'q12', text: 'Which SQL statement is used to create a database table?', options: ['CREATE TABLE', 'MAKE TABLE', 'NEW TABLE', 'BUILD TABLE'], correctAnswerText: 'CREATE TABLE' },
+      { id: 'q13', text: 'The OR operator displays a record if:', options: ['ANY conditions are true', 'ALL conditions are true', 'NO conditions are true', 'Conditions are equal'], correctAnswerText: 'ANY conditions are true' },
+      { id: 'q14', text: 'Which keyword is used to return only different values?', options: ['DISTINCT', 'UNIQUE', 'DIFFERENT', 'SINGLE'], correctAnswerText: 'DISTINCT' },
+      { id: 'q15', text: 'How do you select a column named "FirstName" from a table named "Persons"?', options: ['SELECT FirstName FROM Persons', 'EXTRACT FirstName FROM Persons', 'GET FirstName FROM Persons', 'SELECT Persons.FirstName'], correctAnswerText: 'SELECT FirstName FROM Persons' },
+      { id: 'q16', text: 'Which operator is used to check for not equal?', options: ['!= or <>', '=', '==', 'NOT'], correctAnswerText: '!= or <>' },
+      { id: 'q17', text: 'Which SQL clause is used to group rows by one or more columns?', options: ['GROUP BY', 'ORDER BY', 'PARTITION BY', 'GROUP'], correctAnswerText: 'GROUP BY' },
+      { id: 'q18', text: 'What does SQL stand for?', options: ['Structured Query Language', 'Strong Question Language', 'Structured Query List', 'Simple Query Language'], correctAnswerText: 'Structured Query Language' },
+      { id: 'q19', text: 'Which aggregate function returns the average value of a numeric column?', options: ['AVG()', 'AVERAGE()', 'MEDIAN()', 'MEAN()'], correctAnswerText: 'AVG()' },
+      { id: 'q20', text: 'What does the IN operator do?', options: ['Allows specifying multiple values in a WHERE clause', 'Checks if a value is inside a table', 'Inserts a new value', 'None of the above'], correctAnswerText: 'Allows specifying multiple values in a WHERE clause' }
+    ]
+  },
+  {
+    id: 'sql-joins',
+    title: 'SQL Joins',
+    explanation: 'A JOIN clause is used to combine rows from two or more tables, based on a related column between them. Understanding the different types of joins is critical for data analysis.',
+    keyPoints: [
+      { title: 'INNER JOIN', description: 'Returns records that have matching values in both tables.' },
+      { title: 'LEFT JOIN', description: 'Returns all records from the left table, and the matched records from the right table.' },
+      { title: 'RIGHT JOIN', description: 'Returns all records from the right table, and the matched records from the left table.' },
+      { title: 'FULL OUTER JOIN', description: 'Returns all records when there is a match in either left or right table.' }
+    ],
+    questions: [
+      { id: 'q1', text: 'Which JOIN returns matching records in both tables?', options: ['INNER JOIN', 'LEFT JOIN', 'FULL JOIN', 'CROSS JOIN'], correctAnswerText: 'INNER JOIN' },
+      { id: 'q2', text: 'Which JOIN returns all records from the left table?', options: ['LEFT JOIN', 'INNER JOIN', 'RIGHT JOIN', 'OUTER JOIN'], correctAnswerText: 'LEFT JOIN' },
+      { id: 'q3', text: 'Which JOIN returns all records when there is a match in either table?', options: ['FULL OUTER JOIN', 'LEFT JOIN', 'RIGHT JOIN', 'INNER JOIN'], correctAnswerText: 'FULL OUTER JOIN' },
+      { id: 'q4', text: 'In a LEFT JOIN, what happens if there is no match in the right table?', options: ['NULL values are returned for the right table', 'The row is omitted', 'An error occurs', 'Zero is returned'], correctAnswerText: 'NULL values are returned for the right table' },
+      { id: 'q5', text: 'Which JOIN mathematically produces the Cartesian product of two tables?', options: ['CROSS JOIN', 'INNER JOIN', 'LEFT JOIN', 'FULL JOIN'], correctAnswerText: 'CROSS JOIN' },
+      { id: 'q6', text: 'What keyword connects tables in a JOIN condition?', options: ['ON', 'WHERE', 'AND', 'WITH'], correctAnswerText: 'ON' },
+      { id: 'q7', text: 'Are INNER JOIN and JOIN the same in most SQL dialects?', options: ['Yes', 'No', 'Only in MySQL', 'Only in PostgreSQL'], correctAnswerText: 'Yes' },
+      { id: 'q8', text: 'Which JOIN type is used to find non-matching records in both tables?', options: ['FULL OUTER JOIN with WHERE NULL', 'INNER JOIN', 'CROSS JOIN', 'SELF JOIN'], correctAnswerText: 'FULL OUTER JOIN with WHERE NULL' },
+      { id: 'q9', text: 'What is a SELF JOIN?', options: ['A regular join, but the table is joined with itself', 'A join that happens automatically', 'A join between tables with the same name in different schemas', 'A new SQL standard feature'], correctAnswerText: 'A regular join, but the table is joined with itself' },
+      { id: 'q10', text: 'If Table A has 5 rows and Table B has 4 rows, how many rows returns from a CROSS JOIN?', options: ['20', '9', '5', '4'], correctAnswerText: '20' },
+      { id: 'q11', text: 'Which statement is mostly used as a shorthand for INNER JOIN?', options: ['JOIN', 'LEFT JOIN', 'OUTER JOIN', 'COMBINE'], correctAnswerText: 'JOIN' },
+      { id: 'q12', text: 'What does a RIGHT JOIN do?', options: ['Returns all records from the right table, and matched records from the left', 'Returns only matched records', 'Returns all records from the left table', 'None of the above'], correctAnswerText: 'Returns all records from the right table, and matched records from the left' },
+      { id: 'q13', text: 'Can you JOIN more than two tables in a single SQL query?', options: ['Yes', 'No', 'Only with OUTER JOINs', 'Only in specialized databases'], correctAnswerText: 'Yes' },
+      { id: 'q14', text: 'What is the purpose of the USING clause in a JOIN?', options: ['It is a shorthand when join columns have the same name', 'It replaces the WHERE clause', 'It creates a new table', 'It handles NULLs'], correctAnswerText: 'It is a shorthand when join columns have the same name' },
+      { id: 'q15', text: 'An OUTER JOIN can be LEFT, RIGHT, or...?', options: ['FULL', 'BOTTOM', 'TOP', 'CENTER'], correctAnswerText: 'FULL' },
+      { id: 'q16', text: 'If a JOIN condition is missing, what happens?', options: ['A CROSS JOIN (Cartesian product) usually occurs', 'Syntax error', 'INNER JOIN defaults to first column', 'Nothing is returned'], correctAnswerText: 'A CROSS JOIN (Cartesian product) usually occurs' },
+      { id: 'q17', text: 'Which join type is best to find customers who haven\'t placed any orders?', options: ['LEFT JOIN finding NULLs in orders table', 'INNER JOIN', 'CROSS JOIN', 'FULL JOIN'], correctAnswerText: 'LEFT JOIN finding NULLs in orders table' },
+      { id: 'q18', text: 'Is it required to use table aliases when joining a table to itself?', options: ['Yes', 'No', 'Only if using OUTER JOIN', 'Depends on the database'], correctAnswerText: 'Yes' },
+      { id: 'q19', text: 'Which keyword can sometimes substitute for JOIN if listed in the FROM clause?', options: ['Comma (,)', 'AND', 'PLUS (+)', 'UNION'], correctAnswerText: 'Comma (,)' },
+      { id: 'q20', text: 'What is a NATURAL JOIN?', options: ['A JOIN that implicitly connects all columns with the same name', 'A JOIN made without primary keys', 'An un-indexed JOIN', 'A fast INNER JOIN'], correctAnswerText: 'A JOIN that implicitly connects all columns with the same name' }
+    ]
+  },
+  {
+    id: 'data-cleaning',
+    title: 'Data Cleaning',
+    explanation: 'Data Cleaning involves preparing data for analysis by removing or modifying data that is incorrect, incomplete, irrelevant, duplicated, or improperly formatted.',
+    keyPoints: [
+      { title: 'Handling Missing Values', description: 'Strategies include removing rows with missing data or imputing (filling in) values using mean, median, or predictive models.' },
+      { title: 'Removing Duplicates', description: 'Ensuring that each record represents a unique observation to prevent skewed results.' },
+      { title: 'Data Type Conversion', description: 'Ensuring numbers are stored as numeric types, dates as datetime types, and not as simple strings.' },
+      { title: 'Outlier Detection', description: 'Identifying extreme values that may be errors or valid but unusual events, often using Z-scores or IQR.' }
+    ],
+    questions: [
+      { id: 'q1', text: 'What is the first step usually taken when handling missing values?', options: ['Assess the extent and pattern of missing data', 'Delete all rows with missing data', 'Replace with zeros', 'Ignore them'], correctAnswerText: 'Assess the extent and pattern of missing data' },
+      { id: 'q2', text: 'Which method fills missing numerical data with the most common value?', options: ['Mode imputation', 'Mean imputation', 'Dropping', 'Interpolation'], correctAnswerText: 'Mode imputation' },
+      { id: 'q3', text: 'What does "deduplication" mean?', options: ['Removing duplicate records', 'Making copies of data', 'Splitting tables', 'Encrypting data'], correctAnswerText: 'Removing duplicate records' },
+      { id: 'q4', text: 'Why is data type conversion important?', options: ['To perform mathematical operations on numbers stored as text', 'To make files smaller', 'To change languages', 'It is not important'], correctAnswerText: 'To perform mathematical operations on numbers stored as text' },
+      { id: 'q5', text: 'What is an outlier?', options: ['An observation that lies an abnormal distance from other values', 'A missing value', 'A text string in a number column', 'A duplicated row'], correctAnswerText: 'An observation that lies an abnormal distance from other values' },
+      { id: 'q6', text: 'Which technique uses quartiles to detect outliers?', options: ['Interquartile Range (IQR)', 'Z-score', 'Mean absolute error', 'Linear regression'], correctAnswerText: 'Interquartile Range (IQR)' },
+      { id: 'q7', text: 'What does imputing missing values mean?', options: ['Filling them with estimated values', 'Deleting them', 'Highlighting them', 'Extracting them'], correctAnswerText: 'Filling them with estimated values' },
+      { id: 'q8', text: 'Which scenario justifies dropping rows with missing values?', options: ['When the percentage of missing data is very small and random', 'Almost always', 'Never', 'When it is numerical data'], correctAnswerText: 'When the percentage of missing data is very small and random' },
+      { id: 'q9', text: 'Standardizing date formats (e.g. DD/MM/YYYY vs MM/DD/YYYY) is an example of:', options: ['Data Transformation/Formatting', 'Data Aggregation', 'Outlier Removal', 'Data Extraction'], correctAnswerText: 'Data Transformation/Formatting' },
+      { id: 'q10', text: 'What is data normalization?', options: ['Scaling numeric data to a standard range (e.g. 0 to 1)', 'Deleting empty rows', 'Encrypting data', 'Adding new columns'], correctAnswerText: 'Scaling numeric data to a standard range (e.g. 0 to 1)' },
+      { id: 'q11', text: 'A Z-score tells you:', options: ['How many standard deviations a value is from the mean', 'The average of a column', 'The median of a column', 'The sum of all values'], correctAnswerText: 'How many standard deviations a value is from the mean' },
+      { id: 'q12', text: 'What is a "dirty" dataset?', options: ['Data containing errors, inconsistencies, or missing values', 'Data from an unknown source', 'Data stored on local hard drives', 'Data in CSV format'], correctAnswerText: 'Data containing errors, inconsistencies, or missing values' },
+      { id: 'q13', text: 'Which Pandas function is commonly used to drop missing values?', options: ['dropna()', 'dropmissing()', 'remove_na()', 'del_nulls()'], correctAnswerText: 'dropna()' },
+      { id: 'q14', text: 'Using the median to fill missing data is better than the mean when:', options: ['The data has many extreme outliers', 'The data is perfectly normal', 'The dataset is perfectly uniform', 'There are no outliers'], correctAnswerText: 'The data has many extreme outliers' },
+      { id: 'q15', text: 'What is data trimming?', options: ['Removing outliers entirely from the dataset', 'Rounding decimal numbers', 'Replacing outliers with the mean', 'Removing white spaces from strings'], correctAnswerText: 'Removing outliers entirely from the dataset' },
+      { id: 'q16', text: 'What does "string stripping" achieve in data cleaning?', options: ['Removes leading and trailing whitespace from text', 'Converts text to numbers', 'Deletes all text columns', 'Encrypts the text'], correctAnswerText: 'Removes leading and trailing whitespace from text' },
+      { id: 'q17', text: 'When might you use regular expressions (Regex) in data cleaning?', options: ['To extract or replace specific text patterns', 'To calculate the mean of a column', 'To sort the dataset', 'To join two tables'], correctAnswerText: 'To extract or replace specific text patterns' },
+      { id: 'q18', text: 'What is data parsing?', options: ['Extracting meaningful information from a composite string (e.g., splitting a full name into first and last)', 'Combining two columns', 'Hiding data', 'Deleting a column'], correctAnswerText: 'Extracting meaningful information from a composite string (e.g., splitting a full name into first and last)' },
+      { id: 'q19', text: 'What is Winsorization?', options: ['Capping extreme outliers at a specified percentile instead of dropping them', 'Combining multiple datasets', 'Removing all null values', 'Converting strings to dates'], correctAnswerText: 'Capping extreme outliers at a specified percentile instead of dropping them' },
+      { id: 'q20', text: 'Why is documenting the data cleaning process important?', options: ['To ensure reproducibility and transparency of the analysis', 'To make files look professional', 'It takes less disk space', 'It is not important'], correctAnswerText: 'To ensure reproducibility and transparency of the analysis' }
+    ]
+  },
+  {
+    id: 'data-visualization',
+    title: 'Data Visualization',
+    explanation: 'Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends.',
+    keyPoints: [
+      { title: 'Bar Charts', description: 'Best for comparing categorical data across different groups.' },
+      { title: 'Line Charts', description: 'Ideal for showing trends over time or continuous intervals.' },
+      { title: 'Scatter Plots', description: 'Used to observe relationships and correlations between two numerical variables.' },
+      { title: 'Histograms', description: 'Used to show the frequency distribution of a single numerical variable.' }
+    ],
+    questions: [
+      { id: 'q1', text: 'Which chart is best for showing trends over time?', options: ['Line Chart', 'Pie Chart', 'Scatter Plot', 'Histogram'], correctAnswerText: 'Line Chart' },
+      { id: 'q2', text: 'Which chart is best for showing a correlation between two continuous variables?', options: ['Scatter Plot', 'Bar Chart', 'Pie Chart', 'Box Plot'], correctAnswerText: 'Scatter Plot' },
+      { id: 'q3', text: 'What is the primary purpose of a Histogram?', options: ['To show the distribution of a continuous variable', 'To compare categories', 'To show percentages of a whole', 'To map geographic data'], correctAnswerText: 'To show the distribution of a continuous variable' },
+      { id: 'q4', text: 'Which chart shows parts of a whole but is often criticized for poor readability?', options: ['Pie Chart', 'Bar Chart', 'Line Chart', 'Scatter Plot'], correctAnswerText: 'Pie Chart' },
+      { id: 'q5', text: 'In a scatter plot, what does the correlation coefficient indicate?', options: ['The strength and direction of a linear relationship', 'The number of data points', 'The average of all values', 'The median value'], correctAnswerText: 'The strength and direction of a linear relationship' },
+      { id: 'q6', text: 'What does a Box Plot (Box and Whisker) primarily show?', options: ['Distribution, central tendency, and outliers', 'Percentages of a whole', 'Geographic locations', 'A direct relationship between x and y'], correctAnswerText: 'Distribution, central tendency, and outliers' },
+      { id: 'q7', text: 'What is the purpose of an axis label?', options: ['To indicate the variable and its unit of measure', 'To give a title to the chart', 'To add color', 'To remove outliers'], correctAnswerText: 'To indicate the variable and its unit of measure' },
+      { id: 'q8', text: 'Which chart is ideal for comparing quantities across different distinct categories?', options: ['Bar Chart', 'Line Chart', 'Scatter Plot', 'Histogram'], correctAnswerText: 'Bar Chart' },
+      { id: 'q9', text: 'A heatmap uses ___ to represent values.', options: ['Color intensity', 'Lines', 'Circles', 'Text size'], correctAnswerText: 'Color intensity' },
+      { id: 'q10', text: 'What does the \'y-axis\' usually represent in a standard line chart of stock prices?', options: ['Price (Dependent Variable)', 'Time (Independent Variable)', 'Company Name', 'Trade Volume'], correctAnswerText: 'Price (Dependent Variable)' },
+      { id: 'q11', text: 'When should you use a stacked bar chart?', options: ['To compare total quantities and their component breakdown across categories', 'To plot a single variable distribution', 'To show correlations', 'To plot geographic data'], correctAnswerText: 'To compare total quantities and their component breakdown across categories' },
+      { id: 'q12', text: 'Which plot visually depicts the quartiles of a dataset?', options: ['Box Plot', 'Histogram', 'Scatter Plot', 'Line Chart'], correctAnswerText: 'Box Plot' },
+      { id: 'q13', text: 'A bubble chart is an extension of which type of chart?', options: ['Scatter Plot', 'Line Chart', 'Pie Chart', 'Bar Chart'], correctAnswerText: 'Scatter Plot' },
+      { id: 'q14', text: 'Data-ink ratio is a concept emphasizing:', options: ['Maximizing ink used on actual data over non-data elements', 'Using as many colors as possible', 'Printing charts in high resolution', 'Removing all text from charts'], correctAnswerText: 'Maximizing ink used on actual data over non-data elements' },
+      { id: 'q15', text: 'Which chart is best for showing hierarchical data as nested rectangles?', options: ['Treemap', 'Histogram', 'Scatter Plot', 'Line chart'], correctAnswerText: 'Treemap' },
+      { id: 'q16', text: 'Choropleth maps use what to show data across geographic areas?', options: ['Color shading', 'Lines connecting cities', 'Dots', 'Pie charts'], correctAnswerText: 'Color shading' },
+      { id: 'q17', text: 'Why is a bar chart generally preferred over a pie chart?', options: ['Humans are better at comparing lengths than angles/areas', 'They use more colors', 'They are circular', 'Pie charts are mathematically incorrect'], correctAnswerText: 'Humans are better at comparing lengths than angles/areas' },
+      { id: 'q18', text: 'What does a trendline in a scatter plot show?', options: ['The general direction or relationship of the data points', 'The exact location of the mean', 'The standard deviation', 'The largest value'], correctAnswerText: 'The general direction or relationship of the data points' },
+      { id: 'q19', text: 'What is a dashboard?', options: ['A collection of visualizations providing an at-a-glance view of key metrics', 'A single complex chart', 'A database table', 'A data cleaning tool'], correctAnswerText: 'A collection of visualizations providing an at-a-glance view of key metrics' },
+      { id: 'q20', text: 'Which principle advises against misleading an audience with scale distortions?', options: ['Starting the y-axis at zero (for bar charts)', 'Using 3D effects', 'Omitting legends', 'Using logarithmic scales arbitrarily'], correctAnswerText: 'Starting the y-axis at zero (for bar charts)' }
+    ]
+  },
+  {
+    id: 'pandas-basics',
+    title: 'Pandas Basics',
+    explanation: 'Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.',
+    keyPoints: [
+      { title: 'DataFrame', description: 'A two-dimensional, size-mutable, potentially heterogeneous tabular data structure.' },
+      { title: 'Series', description: 'A one-dimensional labeled array capable of holding data of any type.' },
+      { title: 'Reading Data', description: 'Functions like pd.read_csv() or pd.read_excel() import data into DataFrames.' },
+      { title: 'Data Selection', description: 'Using .loc[] (label-based) or .iloc[] (integer-position based) to select subsets of data.' }
+    ],
+    questions: [
+      { id: 'q1', text: 'Which Pandas data structure is 2-dimensional?', options: ['DataFrame', 'Series', 'Panel', 'Array'], correctAnswerText: 'DataFrame' },
+      { id: 'q2', text: 'How do you read a CSV file using Pandas?', options: ['pd.read_csv()', 'pd.open_csv()', 'pd.load_csv()', 'pd.get_csv()'], correctAnswerText: 'pd.read_csv()' },
+      { id: 'q3', text: 'Which method returns the first 5 rows of a DataFrame?', options: ['df.head()', 'df.top()', 'df.first()', 'df.show()'], correctAnswerText: 'df.head()' },
+      { id: 'q4', text: 'Which Pandas data structure is 1-dimensional?', options: ['Series', 'DataFrame', 'Matrix', 'Dictionary'], correctAnswerText: 'Series' },
+      { id: 'q5', text: 'What does df.info() do?', options: ['Prints a concise summary of a DataFrame including dtypes and non-null counts', 'Calculates statistics', 'Plots the data', 'Drops null values'], correctAnswerText: 'Prints a concise summary of a DataFrame including dtypes and non-null counts' },
+      { id: 'q6', text: 'How do you select a column named "Age" from a DataFrame "df"?', options: ['df["Age"]', 'df(Age)', 'df{Age}', 'df<Age>'], correctAnswerText: 'df["Age"]' },
+      { id: 'q7', text: 'Which property returns the dimensions (rows, columns) of a DataFrame?', options: ['df.shape', 'df.size', 'df.dim', 'df.length'], correctAnswerText: 'df.shape' },
+      { id: 'q8', text: 'What is the purpose of df.describe()?', options: ['Generates descriptive statistics like mean, standard deviation, and percentiles', 'Describes the data types', 'Prints the column names', 'Plots a histogram'], correctAnswerText: 'Generates descriptive statistics like mean, standard deviation, and percentiles' },
+      { id: 'q9', text: 'Which method is label-based for selecting data in a DataFrame?', options: ['df.loc[]', 'df.iloc[]', 'df.get()', 'df.select()'], correctAnswerText: 'df.loc[]' },
+      { id: 'q10', text: 'Which method uses integer-position based indexing?', options: ['df.iloc[]', 'df.loc[]', 'df.at[]', 'df.head()'], correctAnswerText: 'df.iloc[]' },
+      { id: 'q11', text: 'How do you retrieve the column names of a DataFrame?', options: ['df.columns', 'df.keys()', 'df.names', 'df.header'], correctAnswerText: 'df.columns' },
+      { id: 'q12', text: 'What does df.dropna() do?', options: ['Removes missing values', 'Drops the last column', 'Drops the last row', 'Removes duplicate values'], correctAnswerText: 'Removes missing values' },
+      { id: 'q13', text: 'Which method replaces NaN values with a specified value?', options: ['df.fillna()', 'df.replace_na()', 'df.impute()', 'df.set_na()'], correctAnswerText: 'df.fillna()' },
+      { id: 'q14', text: 'How do you group a DataFrame by a column named "City"?', options: ['df.groupby("City")', 'df.group("City")', 'df.aggregate("City")', 'df.sort("City")'], correctAnswerText: 'df.groupby("City")' },
+      { id: 'q15', text: 'Which method is used to sort a DataFrame by a specific column?', options: ['df.sort_values()', 'df.order_by()', 'df.sort()', 'df.arrange()'], correctAnswerText: 'df.sort_values()' },
+      { id: 'q16', text: 'What will df["Age"].mean() return?', options: ['The average of the Age column', 'The median of the Age column', 'The sum of the Age column', 'A boolean array'], correctAnswerText: 'The average of the Age column' },
+      { id: 'q17', text: 'How can you find unique values in a Series?', options: ['Series.unique()', 'Series.distinct()', 'Series.singular()', 'Series.get_unique()'], correctAnswerText: 'Series.unique()' },
+      { id: 'q18', text: 'Which method counts the occurrence of unique values in a Series?', options: ['Series.value_counts()', 'Series.count()', 'Series.freq()', 'Series.group_counts()'], correctAnswerText: 'Series.value_counts()' },
+      { id: 'q19', text: 'Can Pandas read SQL queries directly?', options: ['Yes, using pd.read_sql()', 'No, strictly CSV and Excel', 'Only in Python 2', 'Only via third-party plugins'], correctAnswerText: 'Yes, using pd.read_sql()' },
+      { id: 'q20', text: 'How do you apply a custom function to a Pandas Series?', options: ['Using apply()', 'Using map()', 'Using reduce()', 'Using execute()'], correctAnswerText: 'Using apply()' }
+    ]
+  },
+  {
+    id: 'statistics-basics',
+    title: 'Statistics Basics',
+    explanation: 'Statistics is the science of collecting, analyzing, presenting, and interpreting data. It is the mathematical foundation of Data Analysis and Machine Learning.',
+    keyPoints: [
+      { title: 'Mean, Median, Mode', description: 'Measures of central tendency describing the center of a data set.' },
+      { title: 'Variance and Standard Deviation', description: 'Measures of dispersion indicating how spread out the data is.' },
+      { title: 'Normal Distribution', description: 'A symmetric probability distribution forming a bell curve where most observations cluster around the central peak.' },
+      { title: 'P-value', description: 'A measure that helps determine the significance of your results in hypothesis testing.' }
+    ],
+    questions: [
+      { id: 'q1', text: 'What is the "mean"?', options: ['The average of all values', 'The middle value', 'The most frequent value', 'The difference between max and min'], correctAnswerText: 'The average of all values' },
+      { id: 'q2', text: 'What is the "median"?', options: ['The middle value when the data is sorted', 'The average', 'The most frequent value', 'The highest value'], correctAnswerText: 'The middle value when the data is sorted' },
+      { id: 'q3', text: 'What is the "mode"?', options: ['The most frequently occurring value', 'The average', 'The middle value', 'The lowest value'], correctAnswerText: 'The most frequently occurring value' },
+      { id: 'q4', text: 'Which measure of central tendency is most affected by extreme outliers?', options: ['Mean', 'Median', 'Mode', 'They are equally affected'], correctAnswerText: 'Mean' },
+      { id: 'q5', text: 'What does standard deviation measure?', options: ['The average distance of data points from the mean', 'The total sum of data', 'The middle of the data', 'The highest value'], correctAnswerText: 'The average distance of data points from the mean' },
+      { id: 'q6', text: 'In a perfect Normal Distribution, which of these is true?', options: ['Mean = Median = Mode', 'Mean > Median', 'Median > Mode', 'Standard Deviation = 0'], correctAnswerText: 'Mean = Median = Mode' },
+      { id: 'q7', text: 'What is variance?', options: ['The square of the standard deviation', 'The square root of standard deviation', 'The sum of all values', 'The middle value'], correctAnswerText: 'The square of the standard deviation' },
+      { id: 'q8', text: 'What is a P-value commonly used for?', options: ['To determine statistical significance in hypothesis testing', 'To calculate the mean', 'To find the largest data point', 'To measure correlation'], correctAnswerText: 'To determine statistical significance in hypothesis testing' },
+      { id: 'q9', text: 'If a p-value is less than 0.05, what is typically the conclusion?', options: ['Reject the null hypothesis', 'Accept the null hypothesis', 'The data is normally distributed', 'The standard deviation is zero'], correctAnswerText: 'Reject the null hypothesis' },
+      { id: 'q10', text: 'What does correlation measure?', options: ['The strength and direction of a relationship between two variables', 'The average of two variables', 'The variance of a variable', 'The median error'], correctAnswerText: 'The strength and direction of a relationship between two variables' },
+      { id: 'q11', text: 'A correlation coefficient of -1 indicates:', options: ['A perfect negative linear relationship', 'No relationship', 'A perfect positive linear relationship', 'An error in calculation'], correctAnswerText: 'A perfect negative linear relationship' },
+      { id: 'q12', text: 'What is a sample?', options: ['A subset of a population used to represent the whole', 'The entire population', 'A mathematical error', 'The mean of the data'], correctAnswerText: 'A subset of a population used to represent the whole' },
+      { id: 'q13', text: 'What does the Central Limit Theorem state?', options: ['The sampling distribution of the sample mean normally distributed as sample size increases', 'All data is normally distributed', 'The mean is always zero', 'Variance decreases over time'], correctAnswerText: 'The sampling distribution of the sample mean normally distributed as sample size increases' },
+      { id: 'q14', text: 'What is the range of a dataset?', options: ['The difference between the maximum and minimum values', 'The standard deviation', 'The mean', 'The sum of all values'], correctAnswerText: 'The difference between the maximum and minimum values' },
+      { id: 'q15', text: 'Which term describes a distribution that has a long tail on the right side?', options: ['Right-skewed (Positive skew)', 'Left-skewed (Negative skew)', 'Normally distributed', 'Bimodal'], correctAnswerText: 'Right-skewed (Positive skew)' },
+      { id: 'q16', text: 'What is a null hypothesis?', options: ['A statement of no effect or no difference', 'A statement that there is a significant effect', 'The calculated mean', 'An absolute truth'], correctAnswerText: 'A statement of no effect or no difference' },
+      { id: 'q17', text: 'What represents the 50th percentile?', options: ['Median', 'Mean', 'Mode', 'First Quartile'], correctAnswerText: 'Median' },
+      { id: 'q18', text: 'What is an independent variable?', options: ['The variable being manipulated or chosen to predict an outcome', 'The variable being measured as an outcome', 'A constant', 'A hidden variable'], correctAnswerText: 'The variable being manipulated or chosen to predict an outcome' },
+      { id: 'q19', text: 'What does IQR stand for in statistics?', options: ['Interquartile Range', 'Internal Quality Ratio', 'Initial Query Response', 'Interquartile Ratio'], correctAnswerText: 'Interquartile Range' },
+      { id: 'q20', text: 'Which graph is primarily used to display the distribution of continuous numerical data?', options: ['Histogram', 'Pie Chart', 'Bar Chart', 'Line Chart'], correctAnswerText: 'Histogram' }
+    ]
+  }
+];
